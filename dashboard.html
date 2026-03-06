@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Smart Study Planner</h1>
+
+<button onclick="logout()">Logout</button>
+
+<hr>
+
+<h2>Add Task</h2>
+
+<input type="text" id="taskInput" placeholder="Enter Task">
+<input type="date" id="taskDate">
+
+<button onclick="addTask()">Add Task</button>
+
+<h2>Task List</h2>
+
+<ul id="taskList"></ul>
+
+<hr>
+
+<h2>Progress Dashboard</h2>
+
+<p>Total Tasks: <span id="total"></span></p>
+<p>Completed Tasks: <span id="completed"></span></p>
+
+<div class="progress">
+<div id="progressBar"></div>
+</div>
+
+<script src="js/task.js"></script>
+<script src="js/progress.js"></script>
+
+</body>
+</html>
